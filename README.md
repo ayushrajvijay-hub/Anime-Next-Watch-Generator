@@ -19,4 +19,4 @@ Clone this repository locally.
 Open the project directory.
 Open index.html directly inside any standard web browser.
 
-##Author:Ayush Vijay
+## Author:Ayush Vijay
