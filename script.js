@@ -5,10 +5,23 @@ const animeContainer = document.getElementById('animeContainer');
 const skeletonContainer = document.getElementById('skeletonContainer');
 const hero = document.getElementById('hero');
 const errorMessage = document.getElementById('errorMessage');
+const themeToggle = document.getElementById('themeToggle');
 
 let currentData = [];
 let allGenres = new Set();
 let debounceTimer;
+
+const currentTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', currentTheme);
+themeToggle.textContent = currentTheme === 'light' ? '🌙' : '☀️';
+
+themeToggle.addEventListener('click', () => {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    const newTheme = isLight ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    themeToggle.textContent = newTheme === 'light' ? '🌙' : '☀️';
+});
 
 const getFavs = () => {
     return JSON.parse(localStorage.getItem('favs') || '[]');
