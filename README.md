@@ -10,13 +10,14 @@ This project uses the public Jikan API. Data is pulled using the native JS fetch
 Hero Section showcasing the premier trending show organically.
 Grid architecture natively resizing from mobile columns to wide desktop spreads.
 Dynamic search inputs routing queries natively through a 300ms debounced interval.
-Array Higher Order Functions integrating `map`, `filter`, and `sort` for manipulating and rendering the data. The application strictly adheres to using these instead of traditional Javascript loop structures (`for`, `while`).
 Dark Mode / Light Mode Theme Toggle to enhance user experience dynamically, persisting across reloads.
 LocalStorage integration persisting favorite toggles and theme settings across distinct browser sessions securely.
 Expandable synopsis sections detailing explicit descriptions without disrupting layout containment.
 ## Tech Stack
 HTML5 outlining modular semantics elements.
+
 CSS3 leveraging variables to dictate comprehensive dark and light aesthetics natively.
+
 Vanilla JavaScript orchestrating logic arrays events without external dependencies or framework integrations. 
 ## How to Run It
 Clone this repository locally.
